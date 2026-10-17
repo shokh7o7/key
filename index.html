@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Museum of Ancient Keys</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2339/2339738.png">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Mulish:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="intro" aria-hidden="true">
+    <div class="door left"></div>
+    <div class="door right"></div>
+    <div class="lock">
+      <svg viewBox="0 0 100 100" fill="none" stroke-width="6" stroke-linecap="round">
+        <circle cx="50" cy="22" r="14" />
+        <path d="M50 36 V88 M50 70 H64 M50 82 H60" />
+      </svg>
+    </div>
+    <p class="intro-text">MUSEUM OF KEYS</p>
+  </div>
+
+  <header class="header">
+    <div class="container">
+      <a href="#top" class="logo">
+        <svg viewBox="0 0 60 30" fill="none" stroke-width="3" stroke-linecap="round">
+          <circle cx="12" cy="15" r="9" />
+          <path d="M21 15 H56 M48 15 V24 M54 15 V22" />
+        </svg>
+        Museum of Keys
+      </a>
+
+      <input type="checkbox" id="burger" class="burger">
+      <label for="burger" class="burger-btn" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="menu">
+        <a href="#top">Home</a>
+        <a href="#about">About</a>
+        <a href="#collection">Collection</a>
+        <a href="#halls">Halls</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#events">Events</a>
+        <a href="#tickets">Tickets</a>
+        <a href="#login">Log in</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="top">
+      <img src="images/museum-hall.svg" alt="" class="hero-bg">
+      <div class="container">
+        <div class="hero-text">
+          <h1>Keys That Opened the Ages</h1>
+          <p>
+            Over three hundred keys and locks, from the wooden bolts of ancient Egypt
+            to the hand-forged keys of medieval cathedrals. Each one once guarded
+            someone’s secret.
+          </p>
+          <div class="buttons">
+            <a href="#collection" class="btn">View the collection</a>
+            <a href="#tickets" class="btn outline">Buy a ticket</a>
+          </div>
+          <div class="stats">
+            <div><b>300+</b><span>Keys and locks</span></div>
+            <div><b>4000</b><span>Years of history</span></div>
+            <div><b>12</b><span>Exhibition halls</span></div>
+            <div><b>50k</b><span>Visitors a year</span></div>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <div class="glow"></div>
+          <svg class="big-key" viewBox="0 0 400 160" fill="none" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="70" cy="80" r="52" />
+            <circle cx="70" cy="80" r="26" />
+            <path d="M70 28 V54 M70 106 V132 M18 80 H44" />
+            <path d="M122 80 H360" />
+            <path d="M150 66 V94 M168 66 V94" />
+            <path d="M300 80 V128 H322 V108 H340 V128 H360 V80" />
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container about">
+        <div class="about-image reveal">
+          <img src="images/museum-hall.svg" alt="The main hall of the museum">
+          <div class="about-badge">
+            <b>Since 1998</b>
+            <span>in the heart of Tashkent</span>
+          </div>
+        </div>
+
+        <div class="about-text reveal">
+          <p class="subtitle">About the museum</p>
+          <h2>A small museum with a long story</h2>
+          <p>
+            The Museum of Ancient Keys began with one private collection of forty keys.
+            Today it fills twelve halls with locks, keys and tools from Egypt, Rome,
+            Central Asia and medieval Europe.
+          </p>
+          <p>
+            We believe every key tells a story about the people who used it: what they
+            owned, what they feared and what they wanted to protect.
+          </p>
+          <div class="features">
+            <div class="feature">
+              <span class="icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18" /><path d="M5 21V10M9.5 21V10M14.5 21V10M19 21V10" /><path d="M2 10h20L12 3 2 10z" /></svg>
+              </span>
+              <div>
+                <h3>12 halls</h3>
+                <p>Arranged by era and region.</p>
+              </div>
+            </div>
+            <div class="feature">
+              <span class="icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15v-3a8 8 0 0 1 16 0v3" /><rect x="3" y="14" width="5" height="7" rx="2" /><rect x="16" y="14" width="5" height="7" rx="2" /></svg>
+              </span>
+              <div>
+                <h3>Audio guide</h3>
+                <p>In English, Russian and Uzbek.</p>
+              </div>
+            </div>
+            <div class="feature">
+              <span class="icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7" /><path d="M20 20l-4-4" /></svg>
+              </span>
+              <div>
+                <h3>Restoration lab</h3>
+                <p>Watch experts at work.</p>
+              </div>
+            </div>
+            <div class="feature">
+              <span class="icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="7" r="3" /><circle cx="17" cy="9" r="2.5" /><path d="M2 21v-2a5 5 0 0 1 10 0v2" /><path d="M14 21v-1.5a3.5 3.5 0 0 1 7 0V21" /></svg>
+              </span>
+              <div>
+                <h3>Family friendly</h3>
+                <p>Workshops for children.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section light" id="collection">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="subtitle">Permanent exhibition</p>
+          <h2>The Collection</h2>
+          <p>A few pieces from our halls, found in excavations or donated from old houses and temples.</p>
+        </div>
+
+        <div class="cards">
+          <div class="card reveal">
+            <div class="card-image">
+              <img src="images/egyptian-key.svg" alt="Egyptian wooden key">
+              <span class="card-more">View piece</span>
+            </div>
+            <div class="card-body">
+              <span class="tag">c. 2000 BC</span>
+              <h3>Egyptian Key</h3>
+              <p>A wooden key with pegs, used to lift the bolt from inside the door.</p>
+            </div>
+          </div>
+
+          <div class="card reveal">
+            <div class="card-image">
+              <img src="images/roman-key.svg" alt="Roman bronze key">
+              <span class="card-more">View piece</span>
+            </div>
+            <div class="card-body">
+              <span class="tag">1st century AD</span>
+              <h3>Roman Ring Key</h3>
+              <p>A bronze key worn on the finger so it would never be lost.</p>
+            </div>
+          </div>
+
+          <div class="card reveal">
+            <div class="card-image">
+              <img src="images/cathedral-key.svg" alt="Iron cathedral key">
+              <span class="card-more">View piece</span>
+            </div>
+            <div class="card-body">
+              <span class="tag">13th century</span>
+              <h3>Cathedral Key</h3>
+              <p>Forged iron, almost thirty centimeters long. It opened the main gates.</p>
+            </div>
+          </div>
+
+          <div class="card reveal">
+            <div class="card-image">
+              <img src="images/chest-key.svg" alt="Brass chest key">
+              <span class="card-more">View piece</span>
+            </div>
+            <div class="card-body">
+              <span class="tag">17th century</span>
+              <h3>Merchant’s Chest Key</h3>
+              <p>A carved brass bow, the mark of a wealthy trading house.</p>
+            </div>
+          </div>
+
+          <div class="card reveal">
+            <div class="card-image">
+              <img src="images/viking-key.svg" alt="Viking bronze key">
+              <span class="card-more">View piece</span>
+            </div>
+            <div class="card-body">
+              <span class="tag">9th century</span>
+              <h3>Viking Key</h3>
+              <p>Bronze with green patina. Women wore such keys on their belts.</p>
+            </div>
+          </div>
+
+          <div class="card reveal">
+            <div class="card-image">
+              <img src="images/castle-key.svg" alt="Iron castle key">
+              <span class="card-more">View piece</span>
+            </div>
+            <div class="card-body">
+              <span class="tag">14th century</span>
+              <h3>Castle Key</h3>
+              <p>A heavy key from a fortress tower, with a three-ring bow.</p>
+            </div>
+          </div>
+
+          <div class="card reveal">
+            <div class="card-image">
+              <img src="images/heart-key.svg" alt="Golden heart key">
+              <span class="card-more">View piece</span>
+            </div>
+            <div class="card-body">
+              <span class="tag">18th century</span>
+              <h3>Heart Key</h3>
+              <p>A wedding gift that opened a small box of family letters.</p>
+            </div>
+          </div>
+
+          <div class="card reveal">
+            <div class="card-image">
+              <img src="images/palace-key.svg" alt="Gilded palace key">
+              <span class="card-more">View piece</span>
+            </div>
+            <div class="card-body">
+              <span class="tag">19th century</span>
+              <h3>Palace Key</h3>
+              <p>Gilded and ceremonial, given to honored guests of the khan.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="halls">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="subtitle">Explore the museum</p>
+          <h2>Exhibition Halls</h2>
+          <p>Each hall takes you to a different time and place.</p>
+        </div>
+
+        <div class="halls">
+          <div class="hall reveal">
+            <img src="images/old-door.svg" alt="An old wooden door with a keyhole">
+            <div class="hall-text">
+              <span class="tag">Hall 1 – 4</span>
+              <h3>Doors and Gates</h3>
+              <p>Real doors from old houses, mosques and castles, with their original locks.</p>
+            </div>
+          </div>
+
+          <div class="hall reveal">
+            <img src="images/ancient-lock.svg" alt="A golden padlock">
+            <div class="hall-text">
+              <span class="tag">Hall 5 – 8</span>
+              <h3>Locks of the Silk Road</h3>
+              <p>Padlocks carried by merchants between China, Samarkand and Baghdad.</p>
+            </div>
+          </div>
+
+          <div class="hall reveal">
+            <img src="images/palace-key.svg" alt="A golden key on a dark background">
+            <div class="hall-text">
+              <span class="tag">Hall 9 – 12</span>
+              <h3>Treasury</h3>
+              <p>The rarest pieces of the museum, kept behind glass under soft light.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section light" id="history">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="subtitle">From wood to steel</p>
+          <h2>A Short History of the Key</h2>
+          <p>How a simple wooden peg became a clever mechanism.</p>
+        </div>
+
+        <div class="timeline">
+          <div class="step reveal">
+            <div class="dot"></div>
+            <div class="step-box">
+              <h3>Ancient Egypt</h3>
+              <span class="tag">4,000 years ago</span>
+              <p>The first pin locks appear. Keys are large and made of wood.</p>
+            </div>
+          </div>
+
+          <div class="step reveal">
+            <div class="dot"></div>
+            <div class="step-box">
+              <h3>Ancient Rome</h3>
+              <span class="tag">1st – 4th centuries</span>
+              <p>Romans make keys of bronze and iron. They become small and strong.</p>
+            </div>
+          </div>
+
+          <div class="step reveal">
+            <div class="dot"></div>
+            <div class="step-box">
+              <h3>The Middle Ages</h3>
+              <span class="tag">10th – 15th centuries</span>
+              <p>Blacksmiths build locks with tricky wards inside. Keys become works of art.</p>
+            </div>
+          </div>
+
+          <div class="step reveal">
+            <div class="dot"></div>
+            <div class="step-box">
+              <h3>The Modern Era</h3>
+              <span class="tag">18th – 19th centuries</span>
+              <p>The cylinder lock is invented. Keys look almost like the ones we use today.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="gallery">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="subtitle">Take a look</p>
+          <h2>Gallery</h2>
+          <p>Moments from our halls and storerooms.</p>
+        </div>
+
+        <div class="gallery">
+          <figure class="photo big reveal">
+            <img src="images/museum-hall.svg" alt="Main hall">
+            <figcaption>The main hall</figcaption>
+          </figure>
+          <figure class="photo reveal">
+            <img src="images/old-door.svg" alt="Old door">
+            <figcaption>Door from Bukhara</figcaption>
+          </figure>
+          <figure class="photo reveal">
+            <img src="images/ancient-lock.svg" alt="Padlock">
+            <figcaption>Silk Road padlock</figcaption>
+          </figure>
+          <figure class="photo reveal">
+            <img src="images/viking-key.svg" alt="Viking key">
+            <figcaption>Viking key</figcaption>
+          </figure>
+          <figure class="photo reveal">
+            <img src="images/heart-key.svg" alt="Heart key">
+            <figcaption>Heart key</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section light" id="events">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="subtitle">What’s on</p>
+          <h2>Upcoming Events</h2>
+          <p>Talks, workshops and night tours for all ages.</p>
+        </div>
+
+        <div class="events">
+          <div class="event reveal">
+            <div class="date">
+              <b>24</b>
+              <span>Oct</span>
+            </div>
+            <div>
+              <h3>Night at the Museum</h3>
+              <p>A candlelight tour of the treasury with our head curator.</p>
+              <span class="time">19:00 – 21:00</span>
+            </div>
+          </div>
+
+          <div class="event reveal">
+            <div class="date">
+              <b>02</b>
+              <span>Nov</span>
+            </div>
+            <div>
+              <h3>Make Your Own Key</h3>
+              <p>A workshop for children aged 8 to 14 with a real blacksmith.</p>
+              <span class="time">11:00 – 13:00</span>
+            </div>
+          </div>
+
+          <div class="event reveal">
+            <div class="date">
+              <b>15</b>
+              <span>Nov</span>
+            </div>
+            <div>
+              <h3>Secrets of Old Locks</h3>
+              <p>A lecture on how medieval locks were built and broken.</p>
+              <span class="time">16:00 – 17:30</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="tickets">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="subtitle">Plan your visit</p>
+          <h2>Tickets</h2>
+          <p>Choose a ticket and spend a day among the oldest keys in the world.</p>
+        </div>
+
+        <div class="prices">
+          <div class="price reveal">
+            <h3>Student</h3>
+            <div class="sum">$5 <small>/ person</small></div>
+            <ul>
+              <li>All permanent halls</li>
+              <li>Student card required</li>
+              <li>Free on Wednesdays</li>
+            </ul>
+            <a href="#login" class="btn">Choose</a>
+          </div>
+
+          <div class="price main reveal">
+            <span class="popular">Most popular</span>
+            <h3>Adult</h3>
+            <div class="sum">$10 <small>/ person</small></div>
+            <ul>
+              <li>All permanent halls</li>
+              <li>Audio guide included</li>
+              <li>Entry to the treasury</li>
+            </ul>
+            <a href="#login" class="btn">Choose</a>
+          </div>
+
+          <div class="price reveal">
+            <h3>Guided tour</h3>
+            <div class="sum">$25 <small>/ group</small></div>
+            <ul>
+              <li>Up to ten people</li>
+              <li>One hour with a guide</li>
+              <li>Book a day ahead</li>
+            </ul>
+            <a href="#login" class="btn">Choose</a>
+          </div>
+        </div>
+
+        <p class="hours">Open Tuesday to Sunday from 10:00 to 18:00. Closed on Mondays.</p>
+      </div>
+    </section>
+
+    <section class="section light">
+      <div class="container faq-wrap">
+        <div class="section-head reveal">
+          <p class="subtitle">Good to know</p>
+          <h2>Questions</h2>
+        </div>
+
+        <div class="faq">
+          <details class="reveal">
+            <summary>Can I take photos inside?</summary>
+            <p>Yes, photos without flash are allowed in every hall except the treasury.</p>
+          </details>
+          <details class="reveal">
+            <summary>How long does a visit take?</summary>
+            <p>Most visitors spend about one and a half hours in the museum.</p>
+          </details>
+          <details class="reveal">
+            <summary>Is the museum accessible?</summary>
+            <p>All halls are on one floor and have wide doors for wheelchairs.</p>
+          </details>
+          <details class="reveal">
+            <summary>Can I donate an old key?</summary>
+            <p>Yes. Send an email to info@museumofkeys.uz and our curators will reply.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container forms">
+        <div class="form-side reveal">
+          <img src="images/old-door.svg" alt="An old wooden door with a keyhole">
+          <div class="form-side-text">
+            <h3>Your key to the museum</h3>
+            <p>Buy tickets online, save your favorite pieces and get news about upcoming events.</p>
+          </div>
+        </div>
+
+        <div class="form-box reveal" id="login">
+          <div class="login">
+            <h2>Log In</h2>
+            <p>Log in to buy tickets and save your favorite pieces.</p>
+            <form id="loginForm">
+              <label for="loginName">Name</label>
+              <input type="text" id="loginName" placeholder="Your name">
+
+              <label for="loginPassword">Password</label>
+              <input type="password" id="loginPassword" placeholder="Your password">
+
+              <button type="submit" class="btn">Log in</button>
+            </form>
+          </div>
+
+          <div class="welcome" id="welcome">
+            <svg viewBox="0 0 100 100" fill="none" stroke-width="6" stroke-linecap="round">
+              <circle cx="50" cy="22" r="14" />
+              <path d="M50 36 V88 M50 70 H64 M50 82 H60" />
+            </svg>
+            <h3>Welcome!</h3>
+            <p id="welcomeText"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="#top" class="logo">
+          <svg viewBox="0 0 60 30" fill="none" stroke-width="3" stroke-linecap="round">
+            <circle cx="12" cy="15" r="9" />
+            <path d="M21 15 H56 M48 15 V24 M54 15 V22" />
+          </svg>
+          Museum of Keys
+        </a>
+        <p>A museum of ancient keys and locks, telling 4,000 years of history through small pieces of metal and wood.</p>
+        <div class="social">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Telegram">TG</a>
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="YouTube">YT</a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Museum</h4>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#collection">Collection</a></li>
+          <li><a href="#halls">Halls</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Visitors</h4>
+        <ul>
+          <li><a href="#tickets">Tickets</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#top">Home</a></li>
+          <li><a href="#login">Log in</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Address</h4>
+        <ul>
+          <li>7 Old Street, Tashkent</li>
+          <li>+998 71 000 00 00</li>
+          <li>info@museumofkeys.uz</li>
+          <li>Tue – Sun, 10:00 – 18:00</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="copyright">© 2026 Museum of Ancient Keys. All rights reserved.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
